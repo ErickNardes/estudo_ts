@@ -15,6 +15,7 @@ export abstract class DioAccount {
 
   insertBalance(balance: number): void {
     this.balance = this.balance + balance
+
   }
   validateWithDraw(value: number): boolean {
     return this.balance >= value;
